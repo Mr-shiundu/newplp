@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body {
+    font-family: montserrat;
+    background: url(background2.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+nav {
+    background-color: #0082e6;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 100px;
+    font-weight: bold;
+    align-items: center;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.active,
+a:hover, .checkbtn {
+    background: #01ffff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+    cursor: pointer;
+    transition: .5s;
+    display: flexbox;
+    text-align: inherit;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        height: 100vh;
+      
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    section {
+        background: url(background2.jpg) no-repeat;
+        background-size: cover;
+        height: calc(100vh - 80px);
+    }
+}
+
+footer {
+    background-color: #151616;
+}
+
+address {
+    background-color: #151616;
+}
+
+.custom-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color: #4CAF50; /* Change the background color */
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.help-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
